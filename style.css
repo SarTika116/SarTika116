@@ -1,0 +1,178 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#fceaff,#e4f4ff);
+color:#333;
+text-align:center;
+overflow-x:hidden;
+}
+
+header{
+padding:80px 20px;
+}
+
+h1{
+font-size:50px;
+color:#6c63ff;
+}
+
+.subtitle{
+font-size:18px;
+margin-top:10px;
+opacity:0.8;
+}
+
+section{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+margin-bottom:20px;
+color:#444;
+}
+
+.about p{
+margin:10px 0;
+line-height:1.6;
+}
+
+.skill-grid{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+width:200px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.goals ul{
+list-style:none;
+}
+
+.goals li{
+margin:10px 0;
+font-size:18px;
+}
+
+button{
+background:#6c63ff;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#4f46e5;
+transform:scale(1.1);
+}
+
+footer{
+margin-top:50px;
+padding:20px;
+font-size:14px;
+opacity:0.7;
+}
+
+
+/* floating bubbles */
+
+.bubbles span{
+position:absolute;
+bottom:-50px;
+width:20px;
+height:20px;
+background:rgba(255,255,255,0.6);
+border-radius:50%;
+animation:rise 10s infinite;
+}
+
+.bubbles span:nth-child(1){
+left:10%;
+animation-duration:12s;
+}
+
+.bubbles span:nth-child(2){
+left:25%;
+animation-duration:9s;
+}
+
+.bubbles span:nth-child(3){
+left:40%;
+animation-duration:11s;
+}
+
+.bubbles span:nth-child(4){
+left:60%;
+animation-duration:10s;
+}
+
+.bubbles span:nth-child(5){
+left:75%;
+animation-duration:8s;
+}
+
+.bubbles span:nth-child(6){
+left:90%;
+animation-duration:13s;
+}
+
+@keyframes rise{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+
+/* fade animation */
+
+.fade-in{
+animation:fade 1.5s ease-in;
+}
+
+.fade-in-delay{
+animation:fade 2s ease-in;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
